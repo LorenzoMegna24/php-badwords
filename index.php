@@ -16,7 +16,8 @@ $nome = "Lorenzo"
   
 <h1>Ciao <?php echo $nome ?></h1>
 
-<form action="censura.php" method="GET">
+<form action="censura.php" method="POST">
+  
   <label for="">Paragrafo</label>
   <input type="text" placeholder="Inserisci qualcosa" name="sezioneParagrafo">
 

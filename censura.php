@@ -1,3 +1,11 @@
+<?php 
+$paragrafo = $_POST['sezioneParagrafo'];
+$censura = $_POST['sezioneParola'];
+
+$risultato = str_replace($censura, '****', $paragrafo)
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,9 +16,9 @@
 </head>
 <body>
 
-  <h2>Pagina censura</h2>
-<p><?php echo $_GET['sezioneParagrafo'] . ', la parola censurata è: ' . $_GET['sezioneParola']  ?></p>
-
+  <h2>Frase censurata</h2>
+  <p><?php echo $paragrafo ?></p>
+  <p><?php echo $risultato ?></p>
   
 </body>
 </html>
